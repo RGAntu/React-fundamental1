@@ -22,9 +22,29 @@ const Posts = ({fetchPosts}) => {
     const posts = use(fetchPosts)
     console.log(posts)
 
+    const data = posts.map(post => {
+                    return(
+                        <div key={post.id} className='border border-amber-500 my-3'>
+                            <h2>{post.title}</h2>
+                            <h2>{post.body}</h2>
+                        </div>
+                    )
+                })
+
     return(
         <div>
-            <h2>Posts:{posts.length}</h2>
+            <h1 className='text-4xl font-bold'>Posts:{posts.length}</h1>
+            {/* {
+              posts.map((post) =>{
+                    return(
+                        <div key={post.id} className='border border-amber-500 my-3'>
+                            <h2>{post.title}</h2>
+                            <h2>{post.body}</h2>
+                        </div>
+                    )
+                } )
+            } */}
+            {data}
         </div>
     )
 }
