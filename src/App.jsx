@@ -1,11 +1,15 @@
 import './App.css'
 import Products from './components/Products'
+import New from './components/New'
+
+
 
 function App() {
 
   return (
     <>
-     <Products></Products>
+     {/* <Products></Products> */}
+     <New></New>
     </>
   )
 }
