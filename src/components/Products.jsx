@@ -37,7 +37,7 @@ const Products = () => {
   return (
     <div>
       <h2>Hello</h2>
-      {isLoading && <p>Loading...</p>}
+      {isLoading && <p className="">Loading...</p>}
       {isError && <p>Error: {isError}</p>}
     </div>
   );
