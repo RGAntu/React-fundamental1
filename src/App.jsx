@@ -5,6 +5,10 @@ import Counter from './components/components/ClassBased'
 import FunctionBased from './components/components/FunctionBased'
 // import { RAFC } from './components/RAFC'
 
+import Form from './components/Form'
+
+
+
 
 
 function App() {
@@ -12,10 +16,12 @@ function App() {
   return (
     <>
      {/* <Products></Products> */}
-     <New></New>
+     {/* <New></New> */}
      {/* <RAFC></RAFC> */}
      {/* <Counter></Counter> */}
-     <FunctionBased></FunctionBased>
+     {/* <FunctionBased></FunctionBased> */}
+     <Form></Form>
+     
     </>
   )
 }
