@@ -1,0 +1,19 @@
+1. Component LifeCycle
+-> render/mount
+-> update/ re-render
+-> unmount/ un-render
+
+
+2. react diff algorithm
+
+real dom    ==> browser
+virtual dom ==> save to memory
+
+
+change -------
+
+compare => saved virtual dom, new virtual dom
+
+change in specific position of real dom
+
+new virtual dom ==>  save to memory

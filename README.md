@@ -9,6 +9,7 @@ React Topics -->
 ✅List and keys <br>
 ✅Pass data from child to parent:  <br>
   👉Props Drilling <br>
+  👉Props LiftUp <br>
   👉Context API <br>
 ✅useEffect Hook <br>
 ✅Controlled and Uncontrolled Component <br>

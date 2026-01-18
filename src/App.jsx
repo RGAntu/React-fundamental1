@@ -6,6 +6,7 @@ import FunctionBased from './components/components/FunctionBased'
 // import { RAFC } from './components/RAFC'
 
 import Form from './components/Form'
+import Child from './components/Child'
 
 
 
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
      {/* <Products></Products> */}
+     <Child></Child>
      {/* <New></New> */}
      {/* <RAFC></RAFC> */}
      {/* <Counter></Counter> */}
