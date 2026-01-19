@@ -3,6 +3,8 @@
 -> update/ re-render
 -> unmount/ un-render
 
+re-render => unmount -> update -> mount
+
 
 2. react diff algorithm
 
@@ -17,3 +19,6 @@ compare => saved virtual dom, new virtual dom
 change in specific position of real dom
 
 new virtual dom ==>  save to memory
+
+
+
