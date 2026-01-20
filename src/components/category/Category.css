@@ -4,3 +4,15 @@
     margin: 5px;
     padding: 10px;
 }
+
+.gridFood{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+
+.foodImg{
+    width: 250px;
+    height: 200px;
+}

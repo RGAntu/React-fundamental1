@@ -11,7 +11,7 @@ console.log(selectedCategory)
         <div>
           <h2>All Meal</h2>
           <Categories setSelectedCategory={setSelectedCategory}></Categories>
-          <ShowCategoryFood></ShowCategoryFood>
+          <ShowCategoryFood selectedCategory={selectedCategory}></ShowCategoryFood>
         </div>
     );
 };

@@ -1,17 +1,29 @@
 import React, { useEffect, useState } from 'react';
+import CategoryFood from './CategoryFood';
+import './Category.css'
 
-const ShowCategoryFood = () => {
+const ShowCategoryFood = ({selectedCategory}) => {
     const [foods, setFoods] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(()=>{
-        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata`)
+        setIsLoading(true)
+        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${selectedCategory}`)
         .then(res => res.json())
-        .then(data => console.log(data))
-    },[])
-   
+        .then(data => {
+            setFoods(data.meals) 
+            setIsLoading(false)
+    })
+    },[selectedCategory])
+   console.log(isLoading)
     return (
-        <div>
-            adfasdfads
+        <div className='gridFood'>
+            {
+                foods?.map((food) => <CategoryFood key={food.idMeal} food={food}></CategoryFood> )
+            }
+            {
+                isLoading && <p>Food Is Loading....</p>
+            }
         </div>
     );
 };
