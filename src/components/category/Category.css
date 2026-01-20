@@ -16,3 +16,11 @@
     width: 250px;
     height: 200px;
 }
+
+.wishListBtn{
+    border: 1px solid gray;
+    color: white;
+    background-color: palevioletred;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
