@@ -1,9 +1,9 @@
 import React from 'react';
 import './Category.css'
 
-const CategoryFood = ({food}) => {
+const CategoryFood = ({food, setWishList}) => {
     const handleWishList = () =>{
-        console.log("wishlist")
+        setWishList(food)
     }
     return (
         <div>

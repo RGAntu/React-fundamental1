@@ -17,10 +17,21 @@
     height: 200px;
 }
 
+.wishListImg{
+    width: 100px;
+    
+}
+
 .wishListBtn{
     border: 1px solid gray;
     color: white;
     background-color: palevioletred;
     padding: 8px 15px;
     border-radius: 10px;
+}
+
+.divBorder{
+    border: 1px solid #eee9e9;
+    padding: 10px 10px;
+    margin: 10px 0;
 }
