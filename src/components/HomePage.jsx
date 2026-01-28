@@ -10,7 +10,7 @@ const [selectedCategory, setSelectedCategory] = useState("")
 const [wishList, setWishList] = useState([]);
 const handleWishList = (food) =>{
     // console.log("The goood foood", food)
-    console.log(food)
+    // console.log(food)
     const wishlistData = [...wishList, food];
     setWishList(wishlistData)
     // console.log(wishlistData)
@@ -18,11 +18,18 @@ const handleWishList = (food) =>{
     }
 // console.log(selectedCategory)
 // console.log("All wishlist data",wishList)
+
+const handleRemove = (idMeal) => {
+const updatedWishList = wishList.filter(
+    item => item.idMeal !== idMeal
+);
+setWishList(updatedWishList)
+}
     return (
         <div>
           <h2>All Meal</h2>
           <Categories setSelectedCategory={setSelectedCategory}></Categories>
-          <WishList wishList={wishList}></WishList>
+          <WishList wishList={wishList} handleRemove={handleRemove} ></WishList>
           <ShowCategoryFood 
           selectedCategory={selectedCategory}
           handleWishList={handleWishList}
