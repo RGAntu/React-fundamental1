@@ -13,8 +13,9 @@
 
 
 .foodImg{
-    width: 250px;
+    width: 100px;
     height: 200px;
+
 }
 
 .wishListImg{
@@ -34,4 +35,10 @@
     border: 1px solid #eee9e9;
     padding: 10px 10px;
     margin: 10px 0;
+}
+
+.wishListContainer{
+    display: flex;
+    justify-content: left;
+    gap: 10px;
 }

@@ -7,9 +7,17 @@ import WishList from './category/WishList';
 
 const HomePage = () => {
 const [selectedCategory, setSelectedCategory] = useState("")
-const [wishList, setWishList] = useState([])
-console.log(selectedCategory)
-console.log(wishList)
+const [wishList, setWishList] = useState([]);
+const handleWishList = (food) =>{
+    // console.log("The goood foood", food)
+    console.log(food)
+    const wishlistData = [...wishList, food];
+    setWishList(wishlistData)
+    // console.log(wishlistData)
+
+    }
+// console.log(selectedCategory)
+// console.log("All wishlist data",wishList)
     return (
         <div>
           <h2>All Meal</h2>
@@ -17,7 +25,7 @@ console.log(wishList)
           <WishList wishList={wishList}></WishList>
           <ShowCategoryFood 
           selectedCategory={selectedCategory}
-          setWishList={setWishList}
+          handleWishList={handleWishList}
           ></ShowCategoryFood>
 
         </div>

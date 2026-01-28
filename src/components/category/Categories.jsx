@@ -14,7 +14,7 @@ const Categories = ({setSelectedCategory}) => {
             {
                 categories.map( category => 
                 <button 
-                onClick={()=> setSelectedCategory(category.strCategory)}
+                onClick={() => setSelectedCategory(category.strCategory)}
                 className='categoryBtn'
                 key={category.idCategory}>
                 {category.strCategory}
